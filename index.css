@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+  body {
+  }
+
+}
+/* Here are the difficulty filter options for the checklist */
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+
+  :root {
+    --black: #1a1a1a;
+    --white: #fff;
+    --green: #49b293;
+  }
+   
+  .filters {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+   
+  .filters * {
+    display: inline-block;
+  }
+   
+  .filters label {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 2rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+  }
+   
+  .filters label:hover {
+    background: var(--green);
+    color: var(--white);
+  }
+
+  :root {
+    --black: #1a1a1a;
+    --white: #fff;
+    --green: #49b293;
+  }
+   
+  .posts {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+   
+  .posts .post {
+    background: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+   
+  .posts .post-title {
+    font-size: 1.3rem;
+  }
+   
+  .posts .post-title:hover {
+    text-decoration: underline;
+  }
+   
+  .posts figcaption {
+    padding: 1rem;
+  }
+   
+  .posts .post-categories {
+    margin-bottom: 0.75rem;
+    font-size: .75rem;
+  }
+   
+  .posts .post-categories * {
+    display: inline-block;
+  }
+   
+  .posts .post-categories li {
+    margin-bottom: 0.2rem;
+  }
+   
+  .posts .post-categories a {
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid;
+    line-height: normal;
+    background: all 0.1s;
+  }
+   
+  .posts .post-categories a:hover {
+    background: var(--green);
+    color: var(--white);
+  }
+   
+  @media screen and (max-width: 900px) {
+    .posts {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+   
+  @media screen and (max-width: 650px) {
+    .posts {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Here are the difficulty filter options for the checklist */
+
+
+  /* here is the beginning of the calendar */
+ 
+  @import url(https://fonts.googleapis.com/css?family=Fjalla+One:400|Roboto:400,400italic,700);
+
+  
+  
+  .jzdbox1 {
+    width:315px; 
+    background:#332f2e; 
+    border-radius:5px; 
+    overflow:hidden; 
+    display:block; 
+    margin-bottom:10px; 
+    box-shadow:0 0 10px #201d1c; 
+    margin:0 auto; 
+    margin-top:100px;
+  }
+  
+  .jzdcal {
+    padding:0 10px 10px 10px; 
+    box-sizing:border-box!important; 
+    background:#749d9e; 
+    background: -webkit-linear-gradient(#749d9e, #b3a68b)!important; 
+    background: -o-linear-gradient(#749d9e, #b3a68b)!important; 
+    background: -moz-linear-gradient(#749d9e, #b3a68b)!important; 
+    background: linear-gradient(#749d9e, #b3a68b)!important;
+  }
+  
+  .jzdcalt {
+    font:18px 'Roboto'; 
+    font-weight:700; 
+    color:#f7f3eb; 
+    display:block; 
+    margin:18px 0 0 0; 
+    text-transform:uppercase; 
+    text-align:center; 
+    letter-spacing:1px;
+  }
+  
+  .jzdcal span {
+    font:11px 'Roboto'; 
+    font-weight:400; 
+    color:#f7f3eb; 
+    text-align:center; 
+    width:42px; 
+    height:42px; 
+    display:inline-block; 
+    float:left; 
+    overflow:hidden; 
+    line-height:40px;
+  }
+  
+  .jzdcal .jzdb:before {
+    opacity:0.3; 
+    content:'o';
+  }
+  
+  .circle {
+    border:1px solid #f7f3eb; 
+    box-sizing:border-box!important; 
+    border-radius:200px!important;
+  }
+  
+  span[data-title]:hover:after, 
+  div[data-title]:hover:after {
+    font:11px 'Roboto'; 
+    font-weight:400; 
+    content:attr(data-title); 
+    position:absolute; 
+    margin:0 0 100px; 
+    background:#282423; 
+    border:1px solid #f7f3eb; 
+    color:#f7f3eb; 
+    padding:5px; 
+    z-index:9999; 
+    min-width:150px; 
+    max-width:150px;
+  }
+  /* here is the end of the calendar */
+
+  footer {
+      background-color:#305252;
+  }
